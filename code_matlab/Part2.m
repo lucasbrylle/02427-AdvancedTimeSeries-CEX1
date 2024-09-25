@@ -84,6 +84,8 @@ scatter(time, x_t, 20, customBlue, 'filled')
 xlabel('t', 'FontWeight', fontWeight, 'FontSize', fontSize);
 ylabel('X_t', 'FontWeight', fontWeight, 'FontSize', fontSize);
 title('SETAR(2,1,1) model');
+set(gca, 'FontWeight', fontWeight, 'FontSize', fontSize); % Set font size and weight for ticks
+box on
 subplot(2,1,2)
 scatter(x_t, y_t_plus_1, 20, customBlue, 'filled');
 xlabel('X_{t-1}', 'FontWeight', fontWeight, 'FontSize', fontSize);
